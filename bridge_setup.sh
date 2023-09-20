@@ -28,5 +28,5 @@ for i in {1..150}; do
     ip link set dev "${interface_name}" up
 
     # 分配静态IP地址
-    ip addr add 192.168.2.$((100 + i))/24 dev "${interface_name}"
+    ip addr add 10.0.0.$((100 + i))/24 dev "${interface_name}"
 done
